@@ -22,7 +22,16 @@ public class User {
     @Column(nullable = false, length = 45, name = "last_name")
     private String lastName;
 
-
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
 
     // Getter und Setter
     public Integer getId() {
